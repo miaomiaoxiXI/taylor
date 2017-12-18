@@ -1,0 +1,202 @@
+/* 头部的样式 */
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    height:100%;
+    width:100%;
+   
+}
+header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    text-align: center;
+    background-image: url("../imgs/bak.png");
+    /* background: rgba(40, 116, 44, 0.555); */
+
+}
+ 
+header>img{
+    width:60px;
+    height: 35px;
+    margin-top:8px;
+    margin-right:300px;
+
+}
+header>span{
+    position: absolute;
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: -240px;
+    margin-top: 18px;
+}
+header> #btns {
+    position: absolute;
+    top:15px;
+    right:30px;
+    font-size:20px;
+}
+header> #btns .user {
+   padding-right:30px;
+}
+
+
+/* 左边导航栏的定位样式 */
+aside {
+    width: 300px;
+    position: fixed;
+    top: 50px;
+    left:0;
+    bottom:30px;
+    overflow:auto;
+    background-color: rgba(3, 166, 120, 0.089);
+    box-shadow: 2px 5px 10px #888888;
+  
+}
+
+/* 修改滚动条的大小 */
+aside::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+}
+aside #nav>ul{
+    list-style-type: none;
+    margin-top:10px;;
+    width:280px;
+    padding-left:7px; 
+    font-size: 18px;
+    /* border:1px solid grey; */
+}
+
+aside #nav>ul li{
+    border-bottom:1px solid rgba(128, 128, 128, 0.199);
+    padding-top:20px;
+}
+aside  #nav .items ul{
+    list-style-type: none;
+    margin-top:15px;
+    width:280px;
+    background-color: rgba(3, 166, 120, 0.233);
+}
+
+aside .items>a{
+    text-decoration: none;
+    color:black;
+}
+aside .items .content1{
+    display: none;
+}
+aside .items .current{
+    color:green;
+} 
+aside .items ul>li{
+    /* position:absolute; */
+    text-align: center;
+    padding:4px 0;  
+    width:280px;
+    margin-left:-40px;;
+  
+}
+
+/* 点击一点显示一行 */
+#nav>ul>li>a{
+    display: block;
+}
+
+aside .items ul>li>a{
+    text-decoration: none;
+    display:block;
+    width:280px;
+    font-size:17px;
+    padding:8px 20px;
+    color:black;
+}
+
+.items ul>li>a:hover{
+    background: rgba(40, 116, 44, 0.555);
+    color:white;
+}
+
+aside .items a.active{
+    background: rgba(40, 116, 44, 0.555);
+    color:white;
+}
+aside .current .caret{
+        transform:rotate(90deg);
+}
+aside .caret {
+    position: absolute;
+    font-weight: bold;
+    font-size:20px;
+    right:50px; 
+    
+}
+
+footer{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:30px;
+    background-image: url("../imgs/bak.png");
+    color:rgba(0, 0, 0, 0.76);
+    text-align: center;
+    font-size:16px;
+}
+footer .dec{
+    padding-top:5px;
+}
+/* 
+
+aside #nav ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    width:280px;
+    background-color: rgba(160, 182, 166, 0.205);
+}
+aside ul a{
+    display:block;
+    width:280px;
+    color:rgba(40, 116, 44, 0.555);
+    padding:8px 20px;
+    text-decoration: none;
+}
+aside ul a:hover{
+    background: rgba(40, 116, 44, 0.555);
+    color:white;
+}
+aside ul a.active{
+    background: rgba(40, 116, 44, 0.555);
+    color:white;
+} */
+#main {
+    width:100%;
+    height:100%;
+    padding:80px 0 0 310px;
+    box-sizing:border-box;
+}
+#con{
+    height:100%;
+    
+}
+
+#con >#intr1{
+    text-indent: 5px;
+    /* padding:10px; */
+    margin-right:30px;
+    background-image: url("../imgs/intr1.jpg");
+    background-repeat: no-repeat;
+    font-family: monospace; 
+    font-size: 24px;
+    font-weight:bold; 
+}
+
+
+
